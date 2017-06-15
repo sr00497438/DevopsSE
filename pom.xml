@@ -9,7 +9,17 @@
 
 	<name>SpringMvcFormExample</name>
 	<url>http://maven.apache.org</url>
-
+	<repositories>
+	    <repository>
+	      <id>localrepo</id>
+	      <name>Local Repository</name>
+	      <url>http://13.228.56.118:8081/artifactory/TechMRepository</url>
+	      <layout>default</layout>
+	      <snapshots>
+	        <enabled>false</enabled>
+	      </snapshots>
+	    </repository>
+	  </repositories>
 	<properties>
 		<java.version>1.7</java.version>
 		<spring.version>3.2.4.RELEASE</spring.version>
@@ -47,16 +57,7 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
-	</dependencies>
-
-	<repositories>
-		<repository>
-			<id>springsource-milestones</id>
-			<name>SpringSource Milestones Proxy</name>
-			<url>https://oss.sonatype.org/content/repositories/springsource-milestones</url>
-		</repository>
-	</repositories>
-
+	</dependencies>	
 	<build>
 		<finalName>SpringMvcFormExample</finalName>
 		<plugins>
