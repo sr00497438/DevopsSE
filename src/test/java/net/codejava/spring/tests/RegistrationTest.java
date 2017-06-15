@@ -13,7 +13,7 @@ import net.codejava.spring.model.User;
 
 public class RegistrationTest {
 
-
+//
 	@Test
 	
 	public void viewRegistrationTest(Map<String, Object> model) {
